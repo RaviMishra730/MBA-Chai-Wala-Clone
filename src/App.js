@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
+// Scss Files 
+import "./Styles/App.scss"
+import "./Styles/IntroVideo.scss"
+import "./Styles/Section.scss"
+// Importing image
+import freshTopicImg from "./assets/asset 0.png";
+// jsx Files 
+import IntroVideo from "./Components/IntroVideo";
+import Section from "./Components/Section";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <>
+    <IntroVideo/>
+    <Section h3={'lorem'} text="lorem" btnTxt={"lorem button"} imgsrc={freshTopicImg} />
+  </>
 }
 
 export default App;
